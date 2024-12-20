@@ -10,10 +10,10 @@ router.post(
     body('email').isEmail().withMessage('Invalid Email'),
     body('fullname.firstname')
       .isLength({ min: 3 })
-      .withMessage('First name Must be 3 Character Long'),
+      .withMessage('First name must be at least 3 characters long'),
     body('password')
       .isLength({ min: 6 })
-      .withMessage('Password Must be 6 Character Long'),
+      .withMessage('Password must be at least 6 characters long'),
   ],
   userController.registerUser
 );
@@ -24,12 +24,13 @@ router.post(
     body('email').isEmail().withMessage('Invalid Email'),
     body('password')
       .isLength({ min: 6 })
-      .withMessage('Password Must be 6 Character Long '),
+      .withMessage('Password must be at least 6 characters long'),
   ],
   userController.loginUser
 );
 
-router.get('/profile', authMiddleware.authUSer, userController.getUserProfile);
-router.get('/logout', authMiddleware.authUSer, userController.logoutUser);
+router.get('/profile', authMiddleware.authUser, userController.getUserProfile);
+
+router.get('/logout', authMiddleware.authUser, userController.logoutUser);
 
 module.exports = router;
