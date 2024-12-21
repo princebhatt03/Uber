@@ -12,7 +12,7 @@ const Home = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        className="h-screen pt-8 flex justify-between flex-col w-full bg-red-400">
+        className="h-screen pt-8 flex justify-between flex-col w-full`">
         <img
           className="w-16 ml-8"
           src={LogoW}
