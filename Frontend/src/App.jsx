@@ -1,10 +1,11 @@
 import React from 'react';
-import Home from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import UserLogin from './pages/UserLogin';
 import UserSignup from './pages/UserSignup';
 import CaptainLogin from './pages/CaptainLogin';
 import CaptainSignup from './pages/CaptainSignup';
+import Home from './pages/Home';
+import FrontPage from './pages/FrontPage';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home />}
+          element={<FrontPage />}
         />
         <Route
           path="/login"
@@ -29,6 +30,10 @@ function App() {
         <Route
           path="/captain-signup"
           element={<CaptainSignup />}
+        />
+        <Route
+          path="/home"
+          element={<Home />}
         />
       </Routes>
     </div>
