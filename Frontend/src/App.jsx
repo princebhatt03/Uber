@@ -6,6 +6,8 @@ import CaptainLogin from './pages/CaptainLogin';
 import CaptainSignup from './pages/CaptainSignup';
 import Home from './pages/Home';
 import FrontPage from './pages/FrontPage';
+import UserProtectWrapper from './pages/UserProtectWrapper';
+import UserLogout from './pages/UserLogout';
 
 function App() {
   return (
@@ -33,7 +35,19 @@ function App() {
         />
         <Route
           path="/home"
-          element={<Home />}
+          element={
+            <UserProtectWrapper>
+              <Home />
+            </UserProtectWrapper>
+          }
+        />
+        <Route
+          path="/user/logout"
+          element={
+            <UserProtectWrapper>
+              <UserLogout />
+            </UserProtectWrapper>
+          }
         />
       </Routes>
     </div>
