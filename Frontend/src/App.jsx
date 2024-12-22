@@ -8,6 +8,9 @@ import Home from './pages/Home';
 import FrontPage from './pages/FrontPage';
 import UserProtectWrapper from './pages/UserProtectWrapper';
 import UserLogout from './pages/UserLogout';
+import CaptainLogout from './pages/CaptainLogout';
+import CaptainHome from './pages/CaptainHome';
+import CaptainProtectWrapper from './pages/CaptainProtectWrapper';
 
 function App() {
   return (
@@ -47,6 +50,22 @@ function App() {
             <UserProtectWrapper>
               <UserLogout />
             </UserProtectWrapper>
+          }
+        />
+        <Route
+          path="/captain/logout"
+          element={
+            <CaptainProtectWrapper>
+              <CaptainLogout />
+            </CaptainProtectWrapper>
+          }
+        />
+        <Route
+          path="/captain-home"
+          element={
+            <CaptainProtectWrapper>
+              <CaptainHome />
+            </CaptainProtectWrapper>
           }
         />
       </Routes>
