@@ -25,12 +25,12 @@ const CaptainDetails = () => {
       </div>
       <div className="bg-[#f1da53] rounded-md mt-4 p-4 flex items-center justify-center gap-7">
         <div className="text-center">
-          <i className="text-2xl font-thin ri-timer-2-line"></i>
+          <i className="text-2xl font-thin ri-timer-line"></i>
           <h5 className="text-lg font-medium">10.2</h5>
           <p className="text-sm text-gray-600">Hours Online</p>
         </div>
         <div className="text-center">
-          <i className="text-2xl font-thin ri-speed-up-line"></i>
+          <i className="text-2xl font-thin ri-speed-fill"></i>
           <h5 className="text-lg font-medium">69</h5>
           <p className="text-sm text-gray-600">Kilo meter Driven</p>
         </div>
