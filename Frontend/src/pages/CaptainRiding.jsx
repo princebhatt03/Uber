@@ -50,7 +50,7 @@ const CaptainRiding = () => {
         <h5
           className="p-1 text-center left-0 absolute top-0 w-full"
           onClick={() => {}}>
-          <i className="text-3xl text-black ri-arrow-up-wide-line"></i>
+          {/* <i className="text-3xl text-black ri-arrow-up-wide-line"></i> */}
         </h5>
         <h4 className="text-xl font-semibold">4 KM Away</h4>
         <button
@@ -64,7 +64,7 @@ const CaptainRiding = () => {
       <div
         ref={finishRidePanelRef}
         className="fixed w-full z-10 bottom-0 translate-y-full bg-white px-3 py-10 pt-12">
-        <FinishRide />
+        <FinishRide setFinishRidePanel={setFinishRidePanel} />
       </div>
     </div>
   );
