@@ -5,4 +5,4 @@ features like user and captain registration, login, and profile management are
 already implemented. The Various Software and Programming Languages used 
 for this Project are; 
 Software tools: VS code, Postman, MongoDB Compass, GitHub, Render, Atlas etc. 
-Programming Languages: NodeJS, ExpressJS, React, MongoDB (MERN).
+Programming Languages: NodeJS, ExpressJS, React, MongoDB (MERN)...
